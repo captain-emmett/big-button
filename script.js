@@ -1,14 +1,17 @@
-var bigbutton = document.getElementById('the-button');
-var copycoutner = 1;
+var forestButton = document.getElementById("forest"); //create variables for each button
+var oceanButton = document.getElementById("ocean");
+var cityButton = document.getElementById("city");
 
-bigbutton.addEventListener('click', function addButton() {
-    const button = document.createElement('button');
-    button.textContent = 'button copy ' + copycoutner;
-    copycoutner++;
+var backgroundButtons = [
+    forestButton,
+    oceanButton,
+    cityButton
+];
 
-    button.addEventListener('click', addButton);
-    const contentDiv = document.querySelector('.button-box');
-    contentDiv.appendChild(button);
-});
-
-console.log("Hello");
+backgroundButtons.forEach(function(button) {
+    button.addEventListener("click", function() {
+        var canvas = document.getElementById("canvas")
+        var background = button.querySelector("img").src;
+        canvas.style.backgroundImage = `url('${background}')`; //could also use "url(" + background + ")"
+    })
+})
