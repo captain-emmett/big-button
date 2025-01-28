@@ -3,15 +3,10 @@ body {
     margin: 0;
     padding: 0;
     background-color: gray;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
 }
 
 .content {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     height: 60vh;
     width: 90vh;
     background-color: white;
@@ -27,7 +22,15 @@ body {
 }
 
 #canvas {
+    height: 300px;
+    width: 500px;
+    border: 1px solid black;
+    position: relative;
+}
 
+#draggableButton {
+    position: absolute;
+    cursor: pointer;
 }
 
 button:hover  {
@@ -44,7 +47,7 @@ header {
 .backgrounds {
     display: flex;
     justify-content: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 10px 10px;
