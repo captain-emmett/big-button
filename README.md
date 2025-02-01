@@ -1,6 +1,6 @@
-# hello-world-test
+# Build a Personality Quiz!
 
-## Simple Website Tutorial
+## Quiz Tutorial
 
 Welcome to the Simple Website Tutorial! This guide will walk you through the steps to create a basic website using HTML, CSS, and JavaScript.
 
@@ -20,16 +20,18 @@ Welcome to the Simple Website Tutorial! This guide will walk you through the ste
 
 ## Introduction
 
-In this tutorial, you'll learn how to create a simple website with an HTML structure, styled with CSS, and interactivity added using JavaScript. By the end of this guide, you will have a basic understanding of how these three technologies work together to create a functional webpage.
+In this tutorial, we will be creating our very own personality quiz using A LOT of Javascript, like I'm pretty sure I'm going to have to simplify it.
 
 ## Project Structure
 
 Create a project directory and set up the following file structure:
 ```plaintext
-simple-website/
+personality-quiz/
 ├── index.html
 ├── styles.css
-└── script.js
+└── js/
+    ├── quiz.js
+    ├── data.js 
 ```
 
 ## Step-by-Step Guide

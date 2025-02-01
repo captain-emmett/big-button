@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>scrap-book</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>Add some stickers!!!</h1>
-  </header>
-  <div class="content">
-    <div id="canvas">
-    </div>
-  </div>
-  <div class="backgrounds">
-    <button class="bckgrnd-button" id="forest"><img class="background-img" src="images/forest.avif" alt="forest"></button>
-    <button class="bckgrnd-button" id="ocean"><img class="background-img" src="images/ocean.jpg" alt="ocean"></button>
-    <button class="bckgrnd-button" id="city"><img class="background-img"  src="images/city.jpg" alt="city"></button>
-  <script src="script.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Cat Quiz</title>
+        <link rel="icon" href="lil_images/stare.png" type="image/png">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="title">What kind of cat are you?</div> 
+            <img id="homescreen" style="padding-bottom: 15px" src="https://placehold.co/400" alt="Story Image"/>
+            <a href="#" class="start-button" onclick="startGame()">Start</a>
+            
+            <div class="game-container" id="game-container">
+                <div class ="story-text" id="story-text"></div>
+                <div class="image-container">
+                    <img id="story-image" src="https://placehold.co/500" alt="Story Image"/>
+                </div>
+                <div class="choices" id="choices"></div>
+            </div>
+        </div>
+        <script type="module" src="js/mainQuiz.js"></script>
+    </body>
 </html>
